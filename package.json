@@ -1,0 +1,27 @@
+{
+    "name": "ru.perfectdaemon.ts.game",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "webpack-dev-server": "webpack-dev-server --open",
+        "webpack-build": "webpack --env.production",
+        "start:egioc": "npm run webpack-dev-server -- --env.game=egioc-game",
+        "build:egioc": "npm run webpack-build -- --env.game=egioc-game"
+    },
+    "private": true,
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.27.0",
+        "@typescript-eslint/parser": "^2.27.0",
+        "copy-webpack-plugin": "5.1.1",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2",
+        "ts-loader": "6.2.2",
+        "tslint": "6.1.1",
+        "typescript": "3.8.3",
+        "webpack": "4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "dependencies": {}
+}
